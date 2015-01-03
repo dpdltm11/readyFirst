@@ -1,39 +1,31 @@
 <resources>
+<!-- Base application theme, dependent on API level. This theme is replaced by AppBaseTheme from res/values-vXX/styles.xml on newer devices. -->
+<style parent="Theme.AppCompat.Light" name="AppBaseTheme">
+<!-- Theme customizations available in newer API levels can go in res/values-vXX/styles.xml, while customizations related to backward-compatibility can go here. -->
+</style>
 
-    <!--
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    -->
-    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
-    </style>
-    <!-- Application theme. -->
-    <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
-    </style>
-    
-    <!-- Application theme. -->
-    <style name="AppMain" parent="AppBaseTheme"></style>
-    
-    
-    <!-- Styling the Action Bar : Use an Android Themes for Application or Activity -->
-    <style name="CustomActionBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="android:actionBarTabTextStyle">@style/MyActionBarTabText</item>
-        <item name="android:actionMenuTextColor">@color/actionbar_menu_text</item>
-    </style>
-    
-    <!-- Styling the Action Bar : title text color -->
-    <style name="MyActionBarTitleText" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
-        <item name="android:textColor">@color/actionbar_title_text</item>
-    </style>
+<!-- Application theme. -->
+<style parent="AppBaseTheme" name="AppTheme">
+<!-- All customizations that are NOT specific to a particular API-level can go here. -->
+</style>
 
-    <!-- Styling the Action Bar : tabs text color -->
-    <style name="MyActionBarTabText" parent="android:style/Widget.Holo.ActionBar.TabText">
-        <item name="android:textColor">@color/actionbar_tab_text</item>
-    </style>
+<!-- Application theme. -->
+<style parent="AppBaseTheme" name="AppMain"></style>
 
+<!-- Styling the Action Bar : Use an Android Themes for Application or Activity -->
+<style parent="Theme.AppCompat.Light.DarkActionBar" name="CustomActionBarTheme">
+<item name="android:actionBarTabTextStyle">@style/MyActionBarTabText</item>
+<item name="android:actionMenuTextColor">@color/actionbar_menu_text</item>
+</style>
+
+<!-- Styling the Action Bar : title text color -->
+<style parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title" name="MyActionBarTitleText">
+<item name="android:textColor">@color/actionbar_title_text</item>
+</style>
+
+<!-- Styling the Action Bar : tabs text color -->
+<style parent="android:style/Widget.Holo.ActionBar.TabText" name="MyActionBarTabText">
+<item name="android:textColor">@color/actionbar_tab_text</item>
+
+</style>
 </resources>
