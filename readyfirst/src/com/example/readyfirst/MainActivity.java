@@ -31,9 +31,20 @@ public class MainActivity extends ActionBarActivity {
         mTabHost.addTab(
                 mTabHost.newTabSpec("분석모드").setIndicator("분석모드", null),
                 analysisMode.class, null);
-		
+        
+        //ActionBar 배경색 설정
+        //this.getActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#00B6E2")));
+        ActionBar bar = getSupportActionBar();
+        //for color
+        bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#00B6E2")));
+        //for image
+        //bar.setBackgroundDrawable(getResources().getDrawable(R.drawable.settings_icon));
+        
+        //tabview의 Text 크기 및 색깔 설정
         for (int i = 0; i < mTabHost.getTabWidget().getChildCount(); i++) {
 
+        	mTabHost.getTabWidget().getChildAt(i).getLayoutParams().height = 200;
+        	
 	        final TextView tv = (TextView) mTabHost.getTabWidget().getChildAt(i)
 	                .findViewById(android.R.id.title);
 
